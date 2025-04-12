@@ -3,6 +3,9 @@
 
 FROM ubuntu:24.04
 
+RUN mkdir /sources
+WORKDIR /sources
+
 # Install ocrmypdf and German language pack
 RUN apt-get update && \
     apt-get install -y \
@@ -11,6 +14,7 @@ RUN apt-get update && \
         libfuse-dev \
         pkg-config \
         gtk2.0-dev \
+        nasm \
     && rm -rf /var/lib/apt/lists/*
 
 
