@@ -4,7 +4,11 @@
 # SPDX-License-Identifier: MIT
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+ROOT_DIR="$(realpath "$(dirname "$(readlink -f "$0SCRIPT_DIR/../..")")")"
 
-docker build --file ${SCRIPT_DIR}/../docker/Dockerfile --tag truecrypt-build:latest ${SCRIPT_DIR}
+docker build --tag truecrypt-build-image:latest ${ROOT_DIR}/tools/docker
 
-docker run -it -v${SCRIPT_DIR}/../..:/sources truecrypt-build:latest
+docker run --name truecrypt-build-container -it --volume .:/sources truecrypt-build-image:latest sh -c "/sources/tools/scripts/build_truecrypt_linux_cli.sh"
+
+docker container rm truecrypt-build-container
+docker image rm truecrypt-build-image:latest
