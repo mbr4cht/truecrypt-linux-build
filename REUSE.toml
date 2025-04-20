@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Michael Bracht
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+[[annotations]]
+path = ["README.md", 
+        "CHANGELOG.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "20254 Michael Bracht"
+SPDX-License-Identifier = "CC0-1.0"

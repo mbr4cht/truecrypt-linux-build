@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Michael Bracht
+# SPDX-License-Identifier: MIT
+[submodule "external/TrueCrypt"]
+	path = external/TrueCrypt
+	url = https://github.com/mbr4cht/TrueCrypt.git
+[submodule "external/wxWidgets"]
+	path = external/wxWidgets
+	url = https://github.com/mbr4cht/wxWidgets.git
+[submodule "external/PKCS11-SPECS"]
+	path = external/PKCS11-SPECS
+	url = https://github.com/Pkcs11Interop/PKCS11-SPECS.git
