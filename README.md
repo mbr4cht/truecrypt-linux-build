@@ -2,6 +2,9 @@
 
 # TrueCrypt build for Linux
 
+[![REUSE status](https://api.reuse.software/badge/github.com/mbr4cht/truecrypt-linux-build)](https://api.reuse.software/info/github.com/mbr4cht/truecrypt-linux-build)
+![Docker](https://img.shields.io/badge/Docker-blue?logo=docker)
+
 This project provides an easy-to-use build environment to build the last available TrueCrypt release v1.7a.
 
 </div>
