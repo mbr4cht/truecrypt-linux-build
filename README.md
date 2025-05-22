@@ -2,6 +2,7 @@
 
 # TrueCrypt build for Linux
 
+[![Build Docker Image](https://github.com/mbr4cht/truecrypt-linux-build/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mbr4cht/truecrypt-linux-build/actions/workflows/docker-image.yml)
 [![REUSE status](https://api.reuse.software/badge/github.com/mbr4cht/truecrypt-linux-build)](https://api.reuse.software/info/github.com/mbr4cht/truecrypt-linux-build)
 ![Docker](https://img.shields.io/badge/Docker-blue?logo=docker)
 
