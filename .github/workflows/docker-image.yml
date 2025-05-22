@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2025 Michael Bracht
+# SPDX-License-Identifier: MIT
+
+name: Build Docker Image
+
+on:
+  push: # Trigger on every push to any branch
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build Docker image
+        run: docker build . --file tools/docker/Dockerfile --tag truecrypt-build-image:$(date +%s)
